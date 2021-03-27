@@ -3,7 +3,6 @@
     <h1>This is an about page</h1>
     <div v-if="user">
         <div>Welcome {{user.user.name}}</div>
-        <!-- <div v-if="user.profile.jobTitle">Your job title is {{user.profile.jobTitle}}</div> -->
         <div><button @click="$msal.signOut()">logout</button></div>
     </div>
     <div v-else>
